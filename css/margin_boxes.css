@@ -1,0 +1,47 @@
+@top-left-corner {
+}
+@top-left {
+}
+@top-center {
+}
+@top-right {
+}
+@top-right-corner {
+}
+@left-top {
+}
+@left-middle {
+}
+@left-bottom {
+}
+@right-top {
+}
+@right-middle {
+}
+@right-bottom {
+}
+@bottom-left-corner {
+}
+@bottom-left {
+}
+@bottom-center {
+}
+@bottom-right {
+}
+@bottom-right-corner {
+}
+
+
+h2::before {
+  content: "Chapter " counter(countChapter, upper-roman);
+}
+
+h2 {
+  string-set: titleBefore content(before), title content(text);
+}
+
+@page {
+  @bottom-center {
+    content: string(titleBefore) ". " string(title, first);
+  }
+}

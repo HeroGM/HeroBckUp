@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!--CAMPAIGN_NAME--> :: <!--CHARACTER_NAME--></title>
+    <meta program = "Hero Designer <!--APP_VERSION-->">
+    <script src="js/paged.polyfill.js"></script>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+    <link rel="stylesheet" href="css/html_book.css" >
+    <link rel="stylesheet" href="css/interface.css">
+</head>
+<body>
+    <main>
+        <header class="cover">
+            <h1>"Book Title"</h1>
+        </header>
+        <article>
+            <header>
+                <h2 class="title">Chapter Title</h2>
+            </header>
+
+            <section>
+                <figure>
+                <!--IF_IMAGE--><img src="<!--IMAGE_RELATIVE_URL-->" alt="Character Picture" /><!--/IF_IMAGE-->
+                </figure>
+                <h2>Background Information</h2>
+                <dl>
+                    <!--IF_APPEARANCE-->
+                    <dt>APPEARANCE</dt>
+                    <dd><!--APPEARANCE--><br/><!--/APPEARANCE--></dd>
+                    <!--/IF_APPEARANCE-->
+                    <!--IF_BACKGROUND-->
+                    <dt>BACKGROUND</dt>
+                    <dd><!--BACKGROUND--><br/><!--/BACKGROUND--></dd>
+                    <!--/IF_BACKGROUND-->    
+                    <!--IF_PERSONALITY-->
+                    <dt>PERSONALITY</dt>
+                    <dd><!--PERSONALITY--><br/><!--/PERSONALITY--></dd>
+                    <!--/IF_PERSONALITY-->
+                    <!--IF_QUOTE-->
+                    <dt>QUOTE</dt>
+                    <dd><!--QUOTE--><br/><!--/QUOTE--></dd>
+                    <!--/IF_QUOTE-->
+                    <!--IF_TACTICS-->
+                    <dt>TACTICS</dt>
+                    <dd><!--TACTICS--><br/><!--/TACTICS--></dd>
+                    <!--/IF_TACTICS-->
+                    <!--IF_CAMPAIGN_USE-->
+                    <dt>CAMPAIGN USE</dt>
+                    <dd><!--CAMPAIGN_USE--><br/><!--/CAMPAIGN_USE--></dd>
+                    <!--/IF_CAMPAIGN_USE-->
+                </dl>
+            </section>
+        </article>
+    </main>
+</body>
+<!--TEMPLATE_NAME-->HTML Workshop<!--/TEMPLATE_NAME-->
+<!--TEMPLATE_DESCRIPTION-->
+<p>This is a simple HTML Export with all the tags listing in different lists
+    (unorderd, ordered and definition). The main purpose is to show how a normal html 
+    export may be made and how the tags export. It's always nice to see how the tags 
+    look when they're actually exported. I personally tend to put the Export info tags 
+    down between the closing body and html tags. You may put them wherever you like.
+</p>
+<div>Date: 06-25-2021</div>
+<!--/TEMPLATE_DESCRIPTION-->
+<!--FILE_EXTENSION-->html<!--/FILE_EXTENSION-->
+<!--FILE_EXTENSION-->htm<!--/FILE_EXTENSION-->
+<!--REPLACE-->
+<!--DEFSTRING-->1/4<!--/DEFSTRING-->
+<!--REPSTRING-->&frac14;<!--/REPSTRING-->
+<!--/REPLACE-->
+<!--REPLACE-->
+<!--DEFSTRING-->1/2<!--/DEFSTRING-->
+<!--REPSTRING-->&frac12;<!--/REPSTRING-->
+<!--/REPLACE-->
+<!--REPLACE-->
+<!--DEFSTRING-->3/4<!--/DEFSTRING-->
+<!--REPSTRING-->&frac34;<!--/REPSTRING-->
+<!--/REPLACE-->
+</html>

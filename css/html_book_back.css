@@ -1,0 +1,131 @@
+:root {
+  --tardis_blue: rgb(0, 59, 111);
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+}
+@page {
+    size: 8.5in 11in;
+    margin: 20mm;
+    font-size: 12pt;
+    font-family: 'budrick_bbregular';
+}
+
+@page:blank {
+  background-color: lightgrey;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'budrick_bbregular';
+  color: rgb(0, 59, 111);
+}
+
+article {
+  page-break-before: always;
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 1mm;
+}
+section {
+  margin: 1.5mm;
+}
+figure {
+  /*float: right; */
+}
+dd, dt {
+  margin: 1.5mm;
+  margin-top: 2mm;
+}
+dt {
+  font-weight: bold;
+  color: var(--tardis_blue);
+}
+
+dl {
+  margin-inline: 3.5mm;
+}
+header {
+  column-span: all;
+}
+p {
+  color: rgb(147, 147, 147);
+}
+table {
+  font-size: 8pt;
+  border-collapse: collapse;
+  
+}
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+td, th {
+  vertical-align: top;
+  min-width: fit-content;
+  padding:0.25rem;
+  border-collapse: collapse; 
+}
+
+#cover {
+  width:80%;
+  margin:auto;
+  text-align: center;
+  break-after: page;
+  page-break-after: always;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/* ------------------------- */
+@font-face {
+    font-family: 'budrick_bbbold';
+    src: url('budrickbb-bold-webfont.woff2') format('woff2'),
+         url('budrickbb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'budrick_bbbold_italic';
+    src: url('budrickbb-bolditalic-webfont.woff2') format('woff2'),
+         url('budrickbb-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'budrick_bbitalic';
+    src: url('budrickbb-italic-webfont.woff2') format('woff2'),
+         url('budrickbb-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* Font Information -- Do NOT touch */
+@font-face {
+    font-family: 'budrick_bbregular';
+    src: url('../fonts/budrickbb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

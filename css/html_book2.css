@@ -1,0 +1,243 @@
+*, 
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* outline: 1px solid orange; 
+  margin:0;
+  padding: 0; */
+}
+:root {
+  --tardis_blue: rgb(0, 59, 111);
+}
+img {
+  max-width: 100%;
+}
+
+body {
+    font-family: 'budrick_bbregular';
+    font-size: 10pt;
+    /* color: rgb(0,59,111);*/
+}
+
+#cover {
+  font-family: 'tavernlore_bbregular';
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-evenly;
+  break-after: right;
+  
+}
+.book_title {
+   string-set: book_title content(text);
+}
+.chapter_content {
+  columns: 2;
+  width:65ch;
+  column-gap: 10ch;
+  column-rule: 2px solid rgba(0,0,0,0.5);
+  column-fill: auto;
+}
+
+.chapter_content > * {
+  display: block;
+  break-inside: avoid-column;
+  margin-bottom: 1rem;
+}
+.chapter header{
+  column-span: all;
+  font-family: 'honeymead_bbregular';
+  font-weight: 700;
+}
+
+table,
+th,
+td {
+   font-size: 8pt;
+   vertical-align: top;
+   border-collapse: collapse;
+}
+table {
+  margin-block: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+caption {
+  background-color: slategray;
+  color: whitesmoke;
+}
+blockquote {
+  font-size: 75%;
+  padding:0;
+  font-style: italic;
+  font-weight: 700;
+}
+th {
+  text-align: left;
+}
+p, dd {
+  text-align: justify;
+  margin: 1ch;
+}
+
+h2,
+h3,
+h4 {
+  color:var(--tardis_blue);
+  font-weight: 700;
+  font-family: 'honeymead_bbregular';
+  margin-left: 0;
+}
+
+small {
+  font-size: 80%;
+  opacity: 0.75;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  list-style-position: outside;
+}
+
+.notes aside {
+  padding-bottom:1ch;
+  border-bottom: 1px solid gray
+}
+
+/* Page Information */
+
+@page {
+  size: letter;
+  margin: 2in;
+  /* marks: crop cross; */
+  @top-center {
+    content: string(book_title);
+    font-family: 'honeymead_bbbold';
+    font-weight: 500;
+  }
+}
+
+@page:left {
+  @bottom-left-corner {
+    content: counter(page);
+    font-family: 'honeymead_bbbold';
+    font-weight: 900;
+  }
+}
+
+@page:right {
+  @bottom-right-corner {
+    content: counter(page);
+    font-family: 'honeymead_bbbold';
+    font-weight: 900;
+  }
+}
+
+figure {
+  width: 100%;
+}
+/* Font Information*/
+
+@font-face {
+
+    font-family: 'budrick_bbregular';
+
+    src: url('../fonts/budrickbb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'budrick_bbbold';
+
+    src: url('../fonts/budrickbb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'budrick_bbbold_italic';
+    src: url('../fonts/budrickbb-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'budrick_bbitalic';
+    src: url('../fonts/budrickbb-italic-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'polyhedral_lc_bbregular';
+    src: url('../fonts/polyhedrallcbb_reg-webfont.woff2') format('woff2'),
+         url('../fonts/polyhedrallcbb_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tavernlore_bbregular';
+    src: url('../fonts/tavernlorebb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/tavernlorebb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbregular';
+    src: url('../fonts/honeymeadbb-webfont.woff2') format('woff2'),
+         url('honeymeadbb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbbold';
+    src: url('../fonts/honeymeadbb_bold-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbbold_italic';
+    src: url('../fonts/honeymeadbb_boldital-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_boldital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbitalic';
+    src: url('../fonts/honeymeadbb_ital-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_ital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

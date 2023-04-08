@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+@page {
+  size: 8.5in 11in;
+  marks: crop cross;
+  @bottom-center {
+    content: counter(page)" of " counter(pages);
+  }
+  /* @top-center {
+     content: element(banner);
+     height:150px;
+   } */
+}
+
+ @page:first {
+  width:80%;
+  
+  @bottom-center {
+    content: none;
+  }
+}
+
+@page:left {
+  @top-left{
+    content: "The Known Lands";
+  }
+  @left-middle {
+    content: "10";
+    font-weight: 900;
+  }
+  @bottom-center {
+    text-align: left;
+  }
+}
+@page:right {
+  @top-right {
+    content: string(chapter_title);
+    font-weight: 900;
+  }
+  @bottom-center {
+    text-align: right;
+  }
+}
+
+@page:blank {
+  @top-left {
+     content:none;
+  }
+  @top-right {
+      content: none;
+  }
+  @bottom-center {
+    content: "[Blank Page]";
+  }
+}
+
+
+.title {
+    string-set: title content(text);
+}
+
+ .chapter_title {
+   string-set: chapter_title content(text);
+ }
+
+img {
+  max-width: 100%;
+}
+
+strong, dt{
+  letter-spacing: 1px;
+}
+
+/*.intro_banner {
+  position: running(banner);
+  column-span: all;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro_banner img {
+  width:50%;
+} */
+
+article {
+  font-family: 'budrick_bbregular';
+  line-height: 1.2;
+  color: rgb(0, 59, 111);
+  columns:2;
+  column-fill: auto;
+  column-gap: 0.5rem;
+  margin:0;
+  break-before: right;
+  break-after: left;
+}
+
+header{
+  column-span: all;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.span {
+  column-span: all;
+  width:100%;
+}
+
+#cover {
+  break-after: left;
+  text-align: center;
+}
+
+
+
+section {
+  break-inside:avoid-column;
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+
+table, td, th {
+  font-size: 8pt;
+  text-align: left;
+  vertical-align: top;
+}
+
+.info {
+  font-style: italic;
+}
+
+.info th {
+  text-align: right;
+  font-weight: 700;
+  color: black;
+}
+
+dt {
+  color: rgb(0, 59, 111);
+  font-weight: 900;
+}
+dd {
+  margin-inline: 1em;
+  
+}
+
+strong em {
+  color: rgb(0, 59, 111);
+}
+
+
+/* Font Information*/
+
+@font-face {
+
+    font-family: 'budrick_bbregular';
+
+    src: url('../fonts/budrickbb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'budrick_bbbold';
+
+    src: url('budrickbb-bold-webfont.woff2') format('woff2'),
+         url('budrickbb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'budrick_bbbold_italic';
+    src: url('budrickbb-bolditalic-webfont.woff2') format('woff2'),
+         url('budrickbb-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'budrick_bbitalic';
+    src: url('budrickbb-italic-webfont.woff2') format('woff2'),
+         url('budrickbb-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    @page {
+        size: 215.9mm 279.4mm;
+        margin: 10mm 15mm;
+        bleed: 6mm;
+        marks: crop cross;
+        font-size: 10pt;
+    }
+    @page:left {
+        margin-left: 25mm;
+        margin-right: 10mm;
+    }
+    @page:right {
+        margin-left: 10mm;
+        margin-right: 25mm;
+    }
+    .chapter{
+        break-before: right;
+    }
+

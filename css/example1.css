@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/freesans');
+
+*,
+*:befrore,
+*:after  {
+  box-sizing: border;
+}
+
+:root {
+  --tardis: rgb(0, 59, 111);
+}
+
+img {
+  width: 100%;
+}
+
+
+/* Page Information*/
+
+@media print {
+  @page {
+    size: 215.9mm 279.4mm;
+    font-family: 'FreeSans', sans-serif;
+    font-size:10pt;
+    margin:17.9mm;
+    
+    @top-center {
+     content: string(chapter_title);
+     font-family: 'tavernlore_bbregular';
+     font-weight: 700;
+    }
+    @bottom-center {
+     content: "The Known Lands";
+     font-family: 'honeymead_bbregular';
+     font-weight: 700;
+    }
+  }
+  
+  @page:left {
+    margin-left: 57.9mm;
+
+    @bottom-left-corner {
+      content: counter(page);
+      font-family: 'tavernlore_bbregular';
+      font-weight: 700;
+    }
+  }
+  
+  @page:right {
+    margin-right: 57.9mm;
+
+     @bottom-right-corner {
+      content: counter(page);
+      font-family: 'tavernlore_bbregular';
+      font-weight: 700;
+    }
+  }
+}
+
+/* Font Information*/
+
+@font-face {
+
+    font-family: 'budrick_bbregular';
+
+    src: url('../fonts/budrickbb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'budrick_bbbold';
+
+    src: url('../fonts/budrickbb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'budrick_bbbold_italic';
+    src: url('../fonts/budrickbb-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'budrick_bbitalic';
+    src: url('../fonts/budrickbb-italic-webfont.woff2') format('woff2'),
+         url('../fonts/budrickbb-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'polyhedral_lc_bbregular';
+    src: url('../fonts/polyhedrallcbb_reg-webfont.woff2') format('woff2'),
+         url('../fonts/polyhedrallcbb_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tavernlore_bbregular';
+    src: url('../fonts/tavernlorebb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/tavernlorebb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbregular';
+    src: url('../fonts/honeymeadbb-webfont.woff2') format('woff2'),
+         url('honeymeadbb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbbold';
+    src: url('../fonts/honeymeadbb_bold-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbbold_italic';
+    src: url('../fonts/honeymeadbb_boldital-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_boldital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'honeymead_bbitalic';
+    src: url('../fonts/honeymeadbb_ital-webfont.woff2') format('woff2'),
+         url('../fonts/honeymeadbb_ital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

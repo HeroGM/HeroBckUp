@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroBits - The Writing</title>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+
+    <section id="introduction">
+        <h1 id="title">HeroBITS &mdash; A Manual for Hero Designer</h1>
+        <p>by Daniel Kendrick</p>
+        <img src="heroMan_01.png" />
+
+      <aside>
+        <h4>For David, Mary, and Stephen</h4>
+        <p>Thank you for your faith and love. </p>
+      </aside>  
+      </section>
+
+      <article>
+    
+    <section>
+         <h2 class="chapter">Directory &amp; Files Setup</h2>
+    <img src="celethia_by_inspector97_demo2tv.jpg" alt="" class="art right">
+    
+        <p>As long as you have a Java Runtime Enviroment [JRE] installed on the system you're using you 
+            can maintain Hero Designer in any way that you want. At times I've used it on a 
+            USB stick and ran it on different computers that had the JRE installed. I <em>try</em>
+            to break it down into some type of originization though so I know where all of my files 
+            are. Nothing can be more frustrating [And I speak from personal experience!] than trying to 
+            find a template or prefab and not knowing what directory you left it in last. 
+        </p>
+        <p>I currently have my directory folders set up this way:</p>
+        <pre>
+ Hero Designer
+ -- Characters [Original Stuff]
+    -- Fantasy Hero
+       -- Spells
+       -- Equipment
+       -- Monsters
+   -- Dark Champions
+      -- Equipment
+ ....
+ -- <strong>Core [Main Program Files]</strong>
+ -- Exports [All of my HDE/HCRs]
+ -- Packages [Files brought from Hero Games]
+    -- Golden Age Champion's 
+    -- Fantasy Hero 
+    -- Champion's 
+    -- Dark Champion's 
+    -- Hero System Martial Arts 
+    -- ....
+        </pre>
+        <p>Okay. So you may not want to go to that extreme sorting through everything. You may just dump everything into one folder along with 
+            all the core files or you may have it scattered about. Believe me, after awhile when you start doing things you will want to 
+            orginize everything in a way you can find it later on. Now if I can just do that with my other files I'll be good. 
+        </p>
+    <div>
+        Just a quick aside here. I get a bit scattered at times so I've started adding date lines to my files. Normally YYYYMMDD so that I 
+        know when I last edited the file and can keep up with any changes I made. Yes, I know, there is github, gitlab and so many others. I 
+        don't always have access to the Internet [I <strong>refuse</strong> to say Interweb]. So I may have a file marked htmlBook20210801.hde 
+        or&nbsp;characterChapterV0115.hcr (verson 1.15). As always this is <strong>MY</strong> personal preference.
+    </div>
+    <h2 class="chapter">The 'Notes' Tabs &amp; Tags</h2>
+     <img src="lash.jpg" class="art left" alt="">
+    <p>Dan Simon was kind enough to give Users 5 Note tabs that  can be worked with to add extra information to their character files. I've seen people use these for group information, background notes, GM notes, character creation stuff. I've known one player that used a Note tab to keep website links that his character might use during a game or things he thought other players and the GM would find useful. </p>
+<p>Our Notes tabs are actived by check-marking them inside the <strong>Campaign Rules</strong> of the current character. Use the <strong>Settings tab</strong> to click which Notes you want to use as well as label them. Change the label name to what you want to use. </p>
+<figure>
+    <img src="notesTab.jpg" alt="">
+    <figcaption>Settings Tab</figcaption>
+</figure>
+    <p>I listed the full tags below. Looking at it it seems a lot. In actually there are only 2 tag pairs and one replacement tag. They are all the same except for the numbers 1-5 at the end of them. Because of that I'm only going to really cover NOTES1. </p>
+       
+<pre class="tags notes">
+    <h2><i></i> Notes Code</h2>
+&lt;!--IF_NOTES1--&gt;
+&lt;!--/IF_NOTES1--&gt;
+&lt;!--NOTES1--&gt;
+&lt;!--/NOTES1--&gt;
+&lt;!--NOTES1_LABEL--&gt;
+&lt;!--IF_NOTES2--&gt;
+&lt;!--/IF_NOTES2--&gt;
+&lt;!--NOTES2--&gt;
+&lt;!--/NOTES2--&gt;
+&lt;!--NOTES2_LABEL--&gt;
+&lt;!--IF_NOTES3--&gt;
+&lt;!--/IF_NOTES3--&gt;
+&lt;!--NOTES3--&gt;
+&lt;!--/NOTES3--&gt;
+&lt;!--NOTES3_LABEL--&gt;
+&lt;!--IF_NOTES4--&gt;
+&lt;!--/IF_NOTES4--&gt;
+&lt;!--NOTES4--&gt;
+&lt;!--/NOTES4--&gt;
+&lt;!--NOTES4_LABEL--&gt;
+&lt;!--IF_NOTES5--&gt;
+&lt;!--/IF_NOTES5--&gt;
+&lt;!--NOTES5--&gt;
+&lt;!--/NOTES5--&gt;
+&lt;!--NOTES5_LABEL--&gt;
+ </pre>
+
+
+<h3>NOTES1 Block</h3>
+<p>For this example I'm going to use the NOTES1 block as some notes I've done for the character. <em>Shoshuro Kashida</em> was origianlly a Legend of the Five Rings character that was translated to D&D 3.5 / Rokugan when it came out and I switched over using KillerShrike's notes from his <a href="http://www.killershrike.com/">website</a>. I am also doing this as a HTML definition list [dl] for those keeping track. </p>
+<p>We start with  &lt;!--IF_NOTES1--&gt;&nbsp;&lt;!--/IF_NOTES1--&gt; tags. These will check to see if the Notes Tab is activated inside our Rules files.</p>
+
+<pre>
+&lt;!--IF_NOTES1--&gt;
+&lt;dl&gt;
+    &lt;dt&gt;&lt;!--NOTES1_LABEL--&gt;&lt;/dt&gt;
+    &lt;dd&gt; &lt;!--NOTES1--&gt;&lt;br&gt;&lt;!--/NOTES1--&gt; &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;!--/IF_NOTES1--&gt;
+</pre>
+
+<p>The <code>NOTES1_LABEL</code> will pull out it's information from the Settings Tab when you turn it on. By default it'll read whichever tab is turned on (i.e. Notes 1). You <em>could</em> hard code it inside your file if you're the only one using the template and you know exactly what the tab is for regardless of the character. You may also even leave the label out and just use the notes. For example one person would keep extra CSS styles inside his Notes 5 tab so it would change depending on the character.  Whatever you'e set your NOTES#_LABEL to though, you can see it as the tab label when you look at the loaded character</p>
+<figure>
+<figcaption>Character Tabs</figcaption>
+<img src="tabBarCharacter.JPG" alt="">
+</figure>
+<p>The meat of the subject of course, is the &lt;!--NOTES5--&gt;&nbsp;&lt;!--/NOTES5--&gt; tag pair. This will export anything that is typed inside the Notes text box. Like all text boxes inside Hero Designer you can input HTML/XML code inside of there, so you may do paragraphs, lists, etc. And yes, you can even put in image tags as well as long as the image is in the same directory or whatever one is loaded. If you do nothing but plain text though, it will be exported as that, plain text. Hero Designer does <strong><em>NOT</em></strong> recognize line feeds though. All those little breaks between paragraphs will be gone.</p>
+<p>In order to fix that we attach a &lt;br&gt; tag between our Notes tags</p>
+<code>&lt;!--NOTES1--&gt;&lt;br&gt;&lt;!--/NOTES1--&gt;</code>
+<aside><p><em>Personal Note: </em>As a web professional (semi-professional?) this bothers me as it's not really semantic. Please not that is a personal issue. I will have to look but I believe RTF and some other formats actually <strong>read</strong> the line breaks/carriage returns and will come back and do it properly.</p></aside>
+<p>That's it. That's all the code you need for the Notes section, duplicated 5 times over. Some exports may need all five of the Notes areas, some may not use any at all. I've found that it depends on the Export your doing, the game you're playing in, as well as what you as the owner of the character may want. All of this can be a very...niche(?) thing. An Export file that uses Notes 3 may be broken because the User put that information on Notes 2. When doing these I would suggest using some caution and fore-thought.</p>
+<figure>
+<h3>Boiler Plate Code [NOTES1]</h3>
+<pre>
+&lt;!--IF_NOTES1--&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;!--NOTES1_LABEL--&gt;&lt;/dt&gt;
+&lt;dd&gt; &lt;!--NOTES1--&gt;&lt;br&gt;&lt;!--/NOTES1--&gt; &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;!--/IF_NOTES1--&gt;
+</pre>
+<p>This will add NOTES1 to your style block at the head of a page. </p>
+
+<pre>
+&lt;!--IF_NOTES1--&gt;
+&lt;style&gt;
+&lt;!--NOTES1--&gt;&nbsp;&lt;!--/NOTES1--&gt
+&lt;/style&gt;
+&lt;!--/IF_NOTES1--&gt;
+</pre>
+</figure>
+    </section>
+<footer>
+  <p>.....</p>
+</footer>
+</article>
+</body>
+</html>

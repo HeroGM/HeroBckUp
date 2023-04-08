@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/pdf_Sample.css">
+  <link rel="stylesheet" href="./css/interface.css">
+  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+  <title>Campaign: Character Name</title>
+</head>
+
+<body>
+  <article>
+    <section class="book_page">
+        <h1><!--CHARACTER_NAME--></h1>
+    </section>
+    <table>
+        <tr>
+            <th>Val</th>
+            <th>Char</th>
+            <th>Cost</th>
+            <th>Roll</th>
+            <th>Notes</th>
+        </tr>
+        <!--STR-->
+        <tr>
+            <td><!--STR_VAL--></td>
+            <th>STR</th>
+            <td><!--STR_COST--></td>
+            <td><!--STR_ROLL--></td>
+            <td><!--STR_NOTES--></td>
+        </tr>
+        <!--/STR-->
+
+        <tr>
+            <td>10/17*</td>
+            <th>DEX</th>
+            <td>0</td>
+            <td>12-</td>
+            <td>OCV: 8/DCV: 8</td>
+        </tr>
+
+        <tr>
+            <td>10/25*</td>
+            <th>CON</th>
+            <td>0</td>
+            <td>14-</td>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>BODY</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>INT</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>EGO</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>PRE</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>OCV</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>DCV</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>OMCV</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>DMCV</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>PD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>ED</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>SPD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>REC</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>END</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <th>STUN</th>
+            <td></td>
+            <td></td>
+            <th>Total Characterstics Cost: <!--CHARACTERISTIC_POINTS--></th>
+        </tr>
+
+    </table>
+    <figure class="movement flex">
+        <div>
+            <strong>Movement: </strong>
+        </div>
+        <div>
+
+        </div>
+    </figure>
+    <!--IFPOWERS--><section class="powers">
+        <table>
+            <tr>
+                <th>Cost</th>
+                <th>Powers</th>
+                <th>END</th>
+            </tr>
+            <!--POWERS-->
+            <tr>
+                <td><!--COST--></td>
+                <td></td>
+                <td><!--END--></td>
+            </tr>
+            <!--/POWERS-->
+        </table>
+    </section><!--/IFPOWERS-->
+
+
+    <section class="background">
+    <!--IF_APPEARANCE-->
+       <div>
+        <dl>
+            <dt>Appearance</dt>
+            <dd><!--APPEARANCE--><br><!--/APPEARANCE--></dd>
+        </dl>
+       </div><!--/IF_APPEARANCE--><!--IF_BACKGROUND-->
+       <div>
+        <dl>
+            <dt>Background</dt>
+            <dd><!--BACKGROUND--><br><!--/BACKGROUND--></dd>
+        </dl>
+       </div><!--/IF_BACKGROUND--><!--IF_PERSONALITY-->
+       <div>
+        <dl>
+            <dt>Personality</dt>
+            <dd><!--PERSONALITY--><br><!--/PERSONALITY--></dd>
+        </dl>
+       </div><!--/IF_PERSONALITY--><!--IF_QUOTE-->
+       <div>
+        <dl>
+            <dt>Quote</dt>
+            <dd><!--QUOTE--><br><!--/QUOTE--></dd>
+        </dl>
+       </div><!--/IF_QUOTE--><!--IF_TACTICS-->
+       <div>
+        <dl>
+            <dt>Tactics</dt>
+            <dd><!--TACTICS--><br><!--/TACTICS--></dd>
+        </dl>
+       </div><!--/IF_TACTICS--><!--IF_CAMPAIGN_USE-->
+       <div>
+        <dl>
+            <dt>Campiagn Use</dt>
+            <dd><!--CAMPAIGN_USE--><br><!--/CAMPAIGN_USE--></dd>
+        </dl>
+       </div><!--/IF_CAMPAIGN_USE-->
+    </section>
+    <footer>
+        <ul>
+            <li><em>Hero Designer Version: </em><!--APP_VERSION--></li>
+            <li><em>Timestamp: </em></li><!--TIMESTAMP-->
+            <li><em>Export ID: </em><!--EXPORT_ID--></li>
+            <li><em>Character File: </em><!--CHARACTER_FILE--></li>
+            <li><em>Character Save Timestamp: </em><!--CHARACTER_SAVE_TIMESTAMP--></li>
+        </ul>
+    </footer>
+  </article>
+</body>
+<!--TEMPLATE_NAME-->PDF Book v202303.27<!--/TEMPLATE_NAME-->
+<!--TEMPLATE_DESCRIPTION-->
+HTML to PDF Book example using a mix of different formats and ideas. 
+<!--/TEMPLATE_DESCRIPTION-->
+<!--FILE_EXTENSION-->html<!--/FILE_EXTENSION-->
+<!--FILE_EXTENSION-->htm<!--/FILE_EXTENSION-->
+</html>
